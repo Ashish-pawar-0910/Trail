@@ -108,7 +108,7 @@ body {
 .container .calculator .equal {
     background: rgba(255, 255, 255, 0.05);
     grid-row: span 2;
-    height: 150px;
+    height: 17vh;
 }
 
 
@@ -225,14 +225,15 @@ body {
     }
 
     .container .calculator .temp_value {
-        height: 8vh;
+        height: 7vh;
         width: 44vh;
         font-size: 16px;
     }
 
     .container .calculator span {
         width: 11vh;
-        height: 8vh;
+        height: 8.5vh;
+        font-size: 16px;
 
 
     }
