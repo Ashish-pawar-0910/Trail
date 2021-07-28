@@ -237,6 +237,26 @@ body {
     }
 }
 
+@media screen and (max-width:321px) {
+    .container .calculator .value {
+        height: 8vh;
+        width: 44vh;
+        font-size: 25px;
+    }
+
+    .container .calculator .temp_value {
+        height: 7vh;
+        width: 44vh;
+        font-size: 16px;
+    }
+
+    .container .calculator span {
+        width: 11vh;
+        height: 8.5vh;
+        font-size: 14px;
+    }
+}
+
 /* @media screen and (min-width:377px) and (max-width:426px) {
     .container .calculator .value {
         height: 10vh;
