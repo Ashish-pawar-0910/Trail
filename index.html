@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Calculator</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="./calculator-outline.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container" >
+        <form class="calculator" name="calc">
+            <input type="text" readonly class="value" id="txt" name="txt">
+            <input type="text" id="txt_2" readonly class="temp_value" name="text2">
+            <span class="num sin" value="sin" onclick="sin()">sin</span>
+            <span class="num cos" value="cos" onclick="cos()">cos</span>
+            <span class="num tan" value="tan" onclick="tan()">tan</span>
+            <span class="num clear" onclick="clearall()">C</span>
+            
+            <span class="num square" value="x^2" onclick="getsquare()"><p>x<sup>2</sup></p> </span>
+            <span class="num " value="x^3" onclick="cube()"> <p>x<sup>3</sup></p></span>
+            <span class="num " value="sqrt2" onclick="sqrt2()"> &radic; </span>
+            <span class="num " value="sqrt3" onclick="sqrt3()"> &#8731; </span>
+
+            <span class="num" value="percent" onclick="getpercent()"> % </span>
+            <span class="num" onclick="appendNo('/')">/</span>
+            <span class="num" onclick="appendNo('-')">-</span>
+            <span class="num" value="BACKSPC" onclick="BACKSPC()"> < </span> 
+
+             <span class="num" onclick="appendNo('7')"  >7</span>
+            <span class="num" onclick="appendNo('8')"  >8</span>
+            <span class="num" onclick="appendNo('9')"  >9</span>
+            <span class="num" onclick="appendNo('*')"  >*</span>
+           
+            <span class="num" onclick="appendNo('4')" >4</span>
+            <span class="num" onclick="appendNo('5')"  >5</span>
+            <span class="num" onclick="appendNo('6')"  >6</span>
+            <span class="num plus" onclick="appendNo('+')"  id="+">+</span>
+             
+            <span class="num" onclick="appendNo('1')"  >1</span>
+            <span class="num" onclick="appendNo('2')"  >2</span>
+            <span class="num" onclick="appendNo('3')"  >3</span>
+            <span class="num equal" onclick="forequal()">=</span>
+            
+            <span class="num" onclick="appendNo('0')" value="0" id="0" >0</span>
+            <span class="num" onclick="appendNo('00')" value="00" id="00">00</span>
+            <span class="num" onclick="appendNo('.')" value="." id=".">.</span>
+            
+            
+        </form>
+    </div>
+    <svg id="gradient-rotate" preserveAspectRatio="none" viewBox="0 0 500 500">
+        <defs>
+          <linearGradient x1="0%" y1="0%" y2="100%" id="a">
+            <stop id="color-stop-1" stop-color="#22C8F6" offset="0%"></stop>
+            <stop id="color-stop-2" stop-color="#20C498" offset="65%"></stop>
+            <stop id="color-stop-3" stop-color="#189932" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path fill="url(#a)" d="M0 0h500v500H0z"></path>
+      </svg>
+      <script src="./trianglify/dist/trianglify.bundle.debug.js"></script>
+      <script>
+    
+      const pattern = trianglify({
+        height: window.innerHeight,
+        width: window.innerWidth,
+        xColors: ['rgba(255, 255, 255, 0.1)', 'rgba(255, 255, 255, 1)'],
+        yColors: 'match',
+        cellSize: Math.ceil(window.innerWidth / 8)
+      })
+      var svg = pattern.toSVG()
+      svg.id = 'trianglify-overlay'
+      document.body.appendChild(svg)
+      </script>
+   
+    <script type="text/javascript" src="vanilla tilt.js"></script>
+    
+    <script type="text/javascript">
+	    VanillaTilt.init(document.querySelector(".container"), {
+		max: 10,
+		speed: 500,
+        glare:true,
+        "max-glare":0.5,
+	    });
+    </script>
+    <script type="text/javascript" src="./logic.js"></script>
+   
+   
+</body>
+</html>
