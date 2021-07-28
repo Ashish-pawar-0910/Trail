@@ -216,7 +216,7 @@ body {
     }
 }
 
-@media screen and (max-width:376px) {
+@media screen and (max-width:426px) {
 
     .container .calculator .value {
         height: 8vh;
@@ -237,10 +237,10 @@ body {
     }
 }
 
-@media screen and (min-width:377px) and (max-width:426px) {
+/* @media screen and (min-width:377px) and (max-width:426px) {
     .container .calculator .value {
         height: 10vh;
-        width: 48vh;
+        width: 4vh;
         font-size: 25px;
     }
 
@@ -255,7 +255,7 @@ body {
         height: 8vh;
 
     }
-}
+} */
 
 /* } */
 
