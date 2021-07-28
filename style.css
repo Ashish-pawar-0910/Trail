@@ -237,21 +237,21 @@ body {
     }
 }
 
-@media screen and (min-width:377px) and (max-width:450px) {
+@media screen and (min-width:377px) and (max-width:426px) {
     .container .calculator .value {
         height: 10vh;
-        width: 52vh;
+        width: 48vh;
         font-size: 25px;
     }
 
     .container .calculator .temp_value {
         height: 7vh;
-        width: 52vh;
+        width: 48vh;
         font-size: 16px;
     }
 
     .container .calculator span {
-        width: 13vh;
+        width: 12vh;
         height: 8vh;
 
     }
