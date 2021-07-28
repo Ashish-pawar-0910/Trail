@@ -234,51 +234,53 @@ body {
         width: 11vh;
         height: 8.5vh;
         font-size: 16px;
+    }
+}
 
-
+@media screen and (min-width:377px) and (max-width:450px) {
+    .container .calculator .value {
+        height: 10vh;
+        width: 52vh;
+        font-size: 25px;
     }
 
-    /* @media screen and (min-width:321px) and (max-width:375px) {
-        .container .calculator .value {
-            height: 10vh !important;
-            width: 60vh !important;
-            font-size: 25px;
-        }
+    .container .calculator .temp_value {
+        height: 7vh;
+        width: 52vh;
+        font-size: 16px;
+    }
 
-        .container .calculator .temp_value {
-            height: 7vh;
-            width: 20vh;
-            font-size: 16px;
-        }
+    .container .calculator span {
+        width: 13vh;
+        height: 8vh;
 
-        .container .calculator span {
-            width: 2vh;
-            height: 8vh;
-        }
-    } */
+    }
+}
 
-    /* @media screen and (max-width:375px) { */
+/* } */
 
-    /* .container .calculator .value {
+/* @media screen and (max-width:375px) { */
+
+/* .container .calculator .value {
         
         width: 40vh;
         font-size: 25px;
     } */
 
-    /* .container .calculator .temp_value {
+/* .container .calculator .temp_value {
         
         width: 40vh;
         font-size: 16px;
     } */
 
-    /* .container .calculator span {
+/* .container .calculator span {
         width: 10vh;
         height: 9.5vh;
     } */
-    /* } */
+/* } */
 
-    /* @media screen and (min-width:450px) and (max-width:770px) { */
-    /* .container .calculator .value {
+/* @media screen and (min-width:450px) and (max-width:770px) { */
+/* .container .calculator .value {
         height: 5vh;
         font-size: 26px;
     }
@@ -288,14 +290,14 @@ body {
         font-size: 18px;
     } */
 
-    /* } */
+/* } */
 
 
-    /* @media screen and (min-width:770px) {
+/* @media screen and (min-width:770px) {
     .container .calculator .value {
         /* height: 80px; */
-    /* width: 400px; */
-}
+/* width: 400px; */
+
 
 /* .container .calculator .temp_value { */
 /* height: 80px; */
