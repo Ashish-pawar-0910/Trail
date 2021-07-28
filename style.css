@@ -44,7 +44,7 @@ body {
     background: transparent;
     color: black;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .container .calculator .temp_value {
@@ -59,8 +59,8 @@ body {
     font-size: 22px;
     background: transparent;
     color: rgba(0, 0, 0, 0.4);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    border-right: 1px solid rgba(2, 2, 2, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .answer {
@@ -236,96 +236,3 @@ body {
         font-size: 16px;
     }
 }
-
-@media screen and (max-width:321px) {
-    .container .calculator .value {
-        height: 8vh;
-        width: 44vh;
-        font-size: 25px;
-    }
-
-    .container .calculator .temp_value {
-        height: 7vh;
-        width: 44vh;
-        font-size: 16px;
-    }
-
-    .container .calculator span {
-        width: 11vh;
-        height: 8.5vh;
-        font-size: 12px;
-    }
-}
-
-/* @media screen and (min-width:377px) and (max-width:426px) {
-    .container .calculator .value {
-        height: 10vh;
-        width: 4vh;
-        font-size: 25px;
-    }
-
-    .container .calculator .temp_value {
-        height: 7vh;
-        width: 48vh;
-        font-size: 16px;
-    }
-
-    .container .calculator span {
-        width: 12vh;
-        height: 8vh;
-
-    }
-} */
-
-/* } */
-
-/* @media screen and (max-width:375px) { */
-
-/* .container .calculator .value {
-        
-        width: 40vh;
-        font-size: 25px;
-    } */
-
-/* .container .calculator .temp_value {
-        
-        width: 40vh;
-        font-size: 16px;
-    } */
-
-/* .container .calculator span {
-        width: 10vh;
-        height: 9.5vh;
-    } */
-/* } */
-
-/* @media screen and (min-width:450px) and (max-width:770px) { */
-/* .container .calculator .value {
-        height: 5vh;
-        font-size: 26px;
-    }
-
-    .container .calculator .temp_value {
-        height: 32px;
-        font-size: 18px;
-    } */
-
-/* } */
-
-
-/* @media screen and (min-width:770px) {
-    .container .calculator .value {
-        /* height: 80px; */
-/* width: 400px; */
-
-
-/* .container .calculator .temp_value { */
-/* height: 80px; */
-/* width: 400px; */
-/* } */
-
-/* .container .calculator span { */
-/* width: 100px; */
-/* } */
-
-/* }  */
